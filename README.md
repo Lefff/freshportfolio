@@ -4,7 +4,7 @@
 
 ## Установка
 
-0. Убедитесь что у вас установлен [Node.js](http://nodejs.org/), [npm](http://npmjs.org/) и [bower](http://bower.io.).
+0. Убедитесь что у вас установлены [Node.js](http://nodejs.org/), [npm](http://npmjs.org/) и [bower](http://bower.io.).
 
 1. Клонируйте репозиторий
 
@@ -26,6 +26,6 @@ $ git clone https://github.com/Lefff/freshportfolio.git
   #Запуск локального сервера для разработки (browser sync)
   $ gulp serv
 
-  #Добавления путей bower зависимостей в проект
+  #Добавление путей bower зависимостей в проект
   $ gulp wiredep
   ```
