@@ -1,3 +1,7 @@
 {
-	
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "wiredep": "^2.2.2"
+  }
 }
