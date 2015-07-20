@@ -26,9 +26,9 @@ $ git clone https://github.com/Lefff/freshportfolio.git
   #Запуск сборщика проекта (задача по умолчанию)
   $ gulp
 
-  #Запуск локального сервера для разработки (browser sync)
-  $ gulp serv
+  #Запуск локального сервера для разработки с отслеживанием изменений (browser sync)
+  $ gulp servlive
 
   #Добавление путей bower зависимостей в проект
-  $ gulp wiredep
+  $ gulp bowerdep
   ```
