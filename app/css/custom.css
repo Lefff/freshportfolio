@@ -41,9 +41,7 @@ body {
 	color: #4a545d;
 	margin-bottom: 81px;
 }
-::-moz-selection {
-	background-color: rgba(59, 168, 192, 0.3);
-}::selection {
+::selection {
 	background-color: rgba(59, 168, 192, 0.3);
 }
 

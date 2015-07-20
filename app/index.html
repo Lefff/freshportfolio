@@ -1,15 +1,37 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru-RU">
 	<head>
 		<meta charset="UTF-8">
-		<title>Loftschool | Тестовое задание 2015</title>
-
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Главная | Loftschool</title>
+		
+		<!--SEO -->
+		<meta name="description" content="Выпускной проект №1 от Loftschool">
+		<meta name="keywords" content="loftschool, homework, вп1, выпускной проект">
+		<meta name="author" content="Тимофей Пономарев">
+		
+		<!-- Icons -->
 		<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
-
-		<link rel="stylesheet" href="./css/vendors.css">
+		
+		<!--CSS -->
+		<!-- build:css css/vendor.css -->
+		<!-- bower:css -->
+		<link rel="stylesheet" href="../bower/normalize.css/normalize.css" />
+		<!-- endbower -->
+		<!-- endbuild -->
+		<!-- build:css css/main.css -->
 		<link rel="stylesheet" href="./css/custom.css">
+		<!-- endbuild -->
+
+		<!-- modernizr -->
+		<!-- build:js js/vendor/modernizr.js -->
+		<script src="../bower/modernizr/modernizr.js"></script>
+		<!-- endbuild -->
 	</head>
 	<body>
+		<!--[if lt IE 8]>
+			<p class="ls_old_browser">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">используйте последнию версии браузеров</a>, чтобы и мы и вы были счастлива.</p>
+		<![endif]-->
 		<div class="ls_header">
 			<div class="ls_wrapper ls_clr-after">
 				<h1 class="ls_header-logo">
@@ -25,8 +47,8 @@
 					</ul>
 				</div>
 
-			</div><!-- ls_wrapper -->
-		</div><!-- ls_header -->
+			</div><!-- / ls_wrapper -->
+		</div><!-- / ls_header -->
 
 		<div class="ls_section ls_about_me">
 			<div class="ls_wrapper ls_clr-after">
@@ -105,6 +127,14 @@
 			</div>
 		</div><!-- ls_footer -->
 
+		<!-- JS Scripts -->
+		<!-- build:js js/vendor.js -->
+		<!-- bower:js -->
+		<script src="../bower/jquery/dist/jquery.js"></script>
+		<!-- endbower -->
+		<!-- endbuild -->
+		<!-- build:js js/main.js -->
 		<script src="./js/custom.js"></script>
+		<!-- endbuild -->
 	</body>
 </html>
