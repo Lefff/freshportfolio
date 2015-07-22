@@ -4,7 +4,8 @@ var gulp            = require('gulp'),
 	browserSync     = require('browser-sync'),
 	wiredep         = require('wiredep').stream;
 
-var $ = gulpLoadPlugins();
+var $      = gulpLoadPlugins(),
+	reload = browserSync.reload;
 
 
 
@@ -22,7 +23,8 @@ gulp.task('styles', function() {
 			   .pipe($.autoprefixer({
 			   		browsers: ['ie 8', 'ie 9', 'last 5 version']
 			   }))
-			   .pipe(gulp.dest('./.tmp'));
+			   .pipe(gulp.dest('./.tmp'))
+			   .pipe(reload({ stream : true }));
 });
 
 
@@ -94,10 +96,8 @@ gulp.task('imgs', function() {
 
 // Отслеживание изменений
 gulp.task('servlive', ['server'], function () {
-	gulp.watch([
-		'app/*.html',
-		'app/css/**/*.css'
-	]).on('change', browserSync.reload);
+	gulp.watch('app/*.html').on('change', reload);
+	gulp.watch('app/css/**/*.css', ['styles']);
 });
 
 
