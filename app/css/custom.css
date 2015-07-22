@@ -230,9 +230,8 @@ body {
  */
 .ls_header-logo {
 	float: left;
-	height: 119px;
-	line-height: 119px;
-	margin: 0;
+	height: 42px;
+	margin: 39px 0 0 0;
 }
 .ls_header-logo-link {
 	display: inline-block;
@@ -259,7 +258,7 @@ body {
  */
 .ls_header-social {
 	float: right;
-	line-height: 119px;
+	margin-top: 35px;
 }
 .ls_header-social-list {
 	display: inline-block;
