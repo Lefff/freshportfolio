@@ -4,7 +4,7 @@
 
 ## Установка
 
-0. Убедитесь что у вас установлены [Node.js](http://nodejs.org/), [npm](http://npmjs.org/) и [bower](http://bower.io.).
+0. Убедитесь что у вас установлены [node.js](http://nodejs.org/), [npm](http://npmjs.org/) и [bower](http://bower.io.).
 
 1. Клонируйте репозиторий
 
