@@ -431,14 +431,14 @@ body {
 	width: 41px;
 	height: 23px;
 	margin-top: -11.5px;
-	background-position-x: -47px;
+	background-position: -47px -109px;
 }
 .ls_icon-doc:before {
 	width: 26px;
 	height: 32px;
 	margin-top: -16px;
 	margin-left: 9px;
-	background-position-x: -94px;
+	background-position: -94px -109px;
 }
 
 
