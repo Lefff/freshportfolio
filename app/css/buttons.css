@@ -5,6 +5,7 @@
 	position: relative;
 	top: 0;
 	display: inline-block;
+	vertical-align: top;
 	border: none;
 	outline: none;
 	border-radius: 3px;

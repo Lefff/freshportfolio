@@ -1,0 +1,121 @@
+/*
+ * Form
+ */
+.ls_form-data {
+	margin-bottom: 21px;
+}
+.ls_form-label {
+	font-size: 36px;
+	line-height: 1;
+	font-weight: 300;
+	color: #959aa8;
+}
+.ls_form-field {
+	display: block;
+	margin: 12px auto;
+}
+.ls_form-field input[type="text"],
+.ls_form-field input[type="password"],
+.ls_form-field input[type="email"],
+.ls_form-field textarea {
+	display: block;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0 auto;
+	border: 1px solid #48cbe8;
+	outline: none;
+	color: #48cbe8;
+	font-weight: 300;
+	font-size: 17px;
+	border-radius: 3px;
+}
+
+.ls_form-field input[type="text"],
+.ls_form-field input[type="password"],
+.ls_form-field input[type="email"] {
+	padding: 0 16px;
+	height: 62px;
+	line-height: 62px;
+}
+.ls_form-field textarea {
+	padding: 18px 16px;
+}
+.ls_form-field input[type="text"]::-webkit-input-placeholder,
+.ls_form-field input[type="password"]::-webkit-input-placeholder,
+.ls_form-field input[type="email"]::-webkit-input-placeholder,
+.ls_form-field textarea::-webkit-input-placeholder {
+	color: #48cbe8;
+}
+.ls_form-field.captcha_img {
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	overflow: hidden;
+	background-color: #fff;
+	border: 1px solid #48cbe8;
+	border-radius: 3px;
+	text-align: center;
+}
+.ls_form-field.captcha_img img {
+	max-width: 90%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.ls_form-field.captcha_text input[type="text"] {
+	height: 32px;
+	line-height: 32px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.ls_form-data.submit {
+	text-align: center;
+	margin-top: 34px;
+}
+.ls_form-data-right_side {
+	text-align: right;
+}
+
+
+
+/*
+ * Form - Small
+ */
+.ls_form.ls_form-small .ls_form-data {
+	margin-bottom: 15px;
+}
+.ls_form.ls_form-small .ls_form-label {
+	font-size: 19px;
+}
+.ls_form.ls_form-small .ls_form-field {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.ls_form.ls_form-small .ls_form-field input[type="text"],
+.ls_form.ls_form-small .ls_form-field input[type="password"],
+.ls_form.ls_form-small .ls_form-field input[type="email"],
+.ls_form.ls_form-small .ls_form-field textarea {
+	font-size: 13px;
+}
+.ls_form.ls_form-small .ls_form-field input[type="text"],
+.ls_form.ls_form-small .ls_form-field input[type="password"],
+.ls_form.ls_form-small .ls_form-field input[type="email"] {
+	padding: 0 8px;
+	height: 41px;
+	line-height: 41px;
+}
+.ls_form.ls_form-small .ls_form-field textarea {
+	padding: 8px;
+	height: 182px;
+}
+.ls_form.ls_form-small .ls_form-field.captcha_text {
+	line-height: 80px;
+}
+.ls_form.ls_form-small .ls_form-field.captcha_text input[type="text"] {
+	height: 32px;
+	line-height: 32px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.ls_form.ls_form-small .ls_form-data.submit {
+	margin-top: 0;
+}

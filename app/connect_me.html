@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Главная | Loftschool</title>
+		
+		<!--SEO -->
+		<meta name="description" content="Выпускной проект №1 от Loftschool">
+		<meta name="keywords" content="loftschool, homework, вп1, выпускной проект">
+		<meta name="author" content="Тимофей Пономарев">
+		
+		<!-- Icons -->
+		<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		
+		<!--CSS -->
+		<!-- build:css css/vendor.css -->
+		<!-- bower:css -->
+		<link rel="stylesheet" href="../bower/normalize.css/normalize.css" />
+		<!-- endbower -->
+		<!-- endbuild -->
+		<!-- build:css css/main.css -->
+
+		<!--CSS - Overall -->
+		<link rel="stylesheet" href="./css/custom.css">
+
+		<!--CSS - Components -->
+		<link rel="stylesheet" href="./css/components.css">
+		<link rel="stylesheet" href="./css/buttons.css">
+		<link rel="stylesheet" href="./css/form.css">
+		<link rel="stylesheet" href="./css/grid.css">
+
+		<!--CSS - Pages -->
+		<link rel="stylesheet" href="./css/auth.css">
+		<link rel="stylesheet" href="./css/connect_me.css">
+
+		<!-- endbuild -->
+
+		<!-- modernizr -->
+		<!-- build:js js/vendor/modernizr.js -->
+		<script src="../bower/modernizr/modernizr.js"></script>
+		<!-- endbuild -->
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+			<p class="ls_old_browser">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">используйте последние версии браузеров</a>, чтобы и мы и вы были счастливы.</p>
+		<![endif]-->
+		<header class="ls_header">
+			<div class="ls_wrapper-big ls_clr-after">
+				<h1 class="ls_header-logo">
+					<a class="ls_header-logo-link" href="./index.html" title="Перейти на главную">
+						<img class="ls_header-logo-img" src="img/ls_header-logo.png" alt="LoftSchool - от мыслителя к создателю">
+						<span class="ls_header-logo-name">LoftSchool - от мыслителя к создателю</span>
+					</a>
+				</h1>
+
+				<div class="ls_header-social">
+					<ul class="ls_header-social-list">
+						<li class="ls_header-social-item">
+							<a class="ls_social ls_social-vk" href="http://vk.com/pontim" target="_blank" title="Vkontakte">Vkontakte</a>
+						</li>
+						<li class="ls_header-social-item">
+							<a class="ls_social ls_social-tw" href="javascript:void(0);" target="_blank" title="Twitter">Twitter</a>
+						</li>
+						<li class="ls_header-social-item">
+							<a class="ls_social ls_social-fb" href="https://www.facebook.com/timofey.ponomarev" target="_blank" title="Facebook">Facebook</a>
+						</li>
+						<li class="ls_header-social-item">
+							<a class="ls_social ls_social-gh" href="https://github.com/Lefff" target="_blank" title="GitHub">GitHub</a>
+						</li>
+					</ul>
+				</div>
+
+			</div><!-- / ls_wrapper -->
+		</header><!-- / ls_header -->
+
+		<section class="ls_section ls_connect_me">
+			<div class="ls_wrapper ls_clr-after">
+
+				<div class="ls_about_me-info">
+					<section class="ls_about_me-info-block">
+						<div class="ls_cmp-color_header">
+							<h2 class="ls_connect_me-title">У вас интересный проект? Напишите мне</h2>
+						</div>
+						<form class="ls_form ls_form-small ls_connect_me-form" action="javascript:void(0);">
+							<div class="ls_row">
+								<div class="ls_col-50">
+									<div class="ls_form-data">
+										<label class="ls_form-label" for="ls_name">Имя</label>
+										<div class="ls_form-field">
+											<input id="ls_name" name="ls_name" type="text" placeholder="Как к Вам обращаться">
+										</div>
+									</div>
+								</div>
+								<div class="ls_col-50">
+									<div class="ls_form-data">
+										<label class="ls_form-label" for="ls_mail">Email</label>
+										<div class="ls_form-field">
+											<input id="ls_mail" name="ls_mail" type="email" placeholder="Куда мне писать">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ls_row">
+								<div class="ls_col-100">
+									<div class="ls_form-data">
+										<label class="ls_form-label" for="ls_message">Сообщение</label>
+										<div class="ls_form-field">
+											<textarea name="ls_message" id="ls_message" placeholder="Кратко в чем суть"></textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ls_row">
+								<div class="ls_col-100">
+									<label class="ls_form-label" for="ls_pass">Введите код, указанный на картинке</label>
+								</div>
+								<div class="ls_col-50">
+									<div class="ls_form-data">
+										<div class="ls_form-field captcha_img">
+											<img src="data:image/jpg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDABYPERMRDhYTEhMZFxYaITckIR4eIUQwMyg3UEZUU09GTUxYY39sWF54X0xNbpZweIOHjpCOVmqcp5uKpn+Ljon/2wBDARcZGSEdIUEkJEGJW01biYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYmJiYn/wAARCAA5ASwDASIAAhEBAxEB/8QAGgABAAMBAQEAAAAAAAAAAAAAAAMEBQEGAv/EAC8QAAICAgECBAYBBAMBAAAAAAECAAMEEQUSIRMxQVEGFCIyYYFxM0KRoRUWUrH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A9dEja+lb1oa1Baw2qFu5/U611S2rU1iixhtVJ7n9QPuJB85i+P4HzFXi+XR1Df8AiTMyovU7BR7k6gdicDqVDhh0nvvfadgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiIHkeWw7eP5bE5O7J6msyNP7Iu+wH6necvdbH5Gk7st1j4pX0H9zD+fIS98SIeQvxOLqG3Z/FsI/sUdt/7l3kuJTMpx1qs8B8Zg1ZC7A1+P1Axc/Dqw+MwuPQA5l9isz+bb9TuT/EGK2fm4+FUzPY2mfbdkUfiaOJxBTPOdmZByMjWlPT0qo/AkdfC2Jn5OSM1wLxogL3H7gVM1hm5VPDYzFaqgDaw9h6T0SKERVXyA0J53D+GGx8l7Hz7GrY7Kr2LfyZ6JQFUKBoAaEDsREBERAREQEREBERAREQEREATobMgpzca+w112qXHmvrIc75tHD1Fmq19Sp9w/I95hZJrfIXJryPCzK/tLoVD/gwPVRMLE5jMcN4uKpNf3ojfVr3A9Zat5qhK0uWt3qft1KPtP5gacSoM1bV1Ro2a2EftsSLH5am2yym1Gqur80Yf7EDQiRUZNOQD4NitrzA8xJYCIiAifLuta9TsFHuZ9A7GxARPlrEQEs6gDz2Z8m6oV+IbFCf+t9oEkSGnKovYrVcjkegMlDAnQI3A7ERAocbx/wAqXvvs8bLt/qWn/wCD2EvxEBERAREQEREBERAREQEREBERAREQEREBKeTi2W3FlZehl0VZd95ciBiPw96+BZReq21E6OvMe0hu4/OqvuNSqachfrVT5N7iehiB490sx+P1ebVysZ+pG9xLfK2K1OFy9WhYrAPr1B9J6N60sUh1BB7dxMfkeFNmIacRgiluoqYFfLHyXP4mTT9KZY6XA9+03MvJTEpN1gPQPPQ3qYXIeLZn8dXZS6rUfqbXbc1eZtSrjLy5HdSBuByvmcCwoFvX6/KS5OdVjsE0XcjYVe5nlcqquj4fw1AXrssB36zQ4+5aeVybMpwvSg6Sx9PxA++cz2yeHe3DG1U/XvzWavEm5uPpa9gzFR5TEo43Jt4vNatfqyX6lU9u01uFx8rHxAuUQGHYKDvQgZWVj1/9nrrZmNbrsoW7EzPyr0SvKw2Vmq8YCvR0AZfyKHz/AIhFgoyDQo6fFX6dH32fSbX/ABWEcb5dqQ6b6j1dyT77gYhBp5zjqzZWGFZ6uj0GvWdsLYfzHzNL2U2uWTMqOyn8/wATXt4XjrQvVjgFfIqSD/mdPFouO1GPdZTW2+pezA78/OBQxORu+abHfKrGq0NBde13bud/zNfCusyMVLLajU52GQ+mjqZrcV4eI2PbUMugf018nQa9DLfD05FHHVVZTE2LvzOyBvsD+oF6IiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAIB8xIcjFoyk6b6lsX2aTRAovxHHuqqcZelPtHftLBxcc9O6UPSNDa71JogB28oiICIiAiIgIiIH//2Q==" alt="Captcha Image">
+										</div>
+									</div>
+								</div>
+								<div class="ls_col-50">
+									<div class="ls_form-data">
+										<div class="ls_form-field captcha_text">
+											<input id="ls_name" name="ls_name" type="text" placeholder="Введите код">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ls_row">
+								<div class="ls_col-50">
+									<div class="ls_form-data">
+										<button class="ls_btn" type="submit">Отправить</button>
+									</div>
+								</div>
+								<div class="ls_col-50">
+									<div class="ls_form-data ls_form-data-right_side">
+										<button class="ls_btn ls_btn-dark" type="submit">Очистить</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</section>
+				</div><!-- ls_about_me-info -->
+
+				<aside class="ls_about_me-left_block">
+					<nav class="ls_left_menu-nav">
+						<ul class="ls_left_menu">
+							<li class="ls_left_menu-item">
+								<a class="ls_left_menu-link" href="javascript:void(0);">Обо мне</a>
+							</li>
+							<li class="ls_left_menu-item">
+								<a class="ls_left_menu-link" href="javascript:void(0);">Мои работы</a>
+							</li>
+							<li class="ls_left_menu-item current">
+								<a class="ls_left_menu-link" href="javascript:void(0);">Связаться со мной</a>
+							</li>
+						</ul>
+					</nav>
+					<section class="ls_about_me-contacts">
+						<ul class="ls_about_me-contacts-list">
+							<li class="ls_about_me-contacts-item">
+								<h2 class="ls_about_me-contacts-title">Контакты</h2>
+							</li>
+							<li class="ls_about_me-contacts-item email ls_clr-after">
+								<div class="ls_about_me-contacts-icon">Email:</div>
+								<div class="ls_about_me-contacts-val">
+									<a class="ls_about_me-contacts-link" href="mailto:timlefff@gmail.com">timlefff@gmail.com</a>
+								</div>
+							</li>
+							<li class="ls_about_me-contacts-item phone ls_clr-after">
+								<div class="ls_about_me-contacts-icon">Телефон:</div>
+								<div class="ls_about_me-contacts-val">
+									<a class="ls_about_me-contacts-link" href="tel:79082001169">+79082001169</a>
+								</div>
+							</li>
+							<li class="ls_about_me-contacts-item skype ls_clr-after">
+								<div class="ls_about_me-contacts-icon">Skype:</div>
+								<div class="ls_about_me-contacts-val">
+									<a class="ls_about_me-contacts-link" href="skype:lefff_kras">lefff_kras</a>
+								</div>
+							</li>
+						</ul>
+					</section>
+				</aside><!-- ls_about_me-left_block -->
+
+			</div><!-- ls_wrapper -->
+		</section><!-- ls_about_me -->
+
+		<footer class="ls_footer">
+			<div class="ls_wrapper">
+				<div class="ls_footer-copy">
+					<div class="ls_footer-copy-text">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+				</div>
+				<div class="ls_footer-lock">
+					<a class="ls_footer-lock-link" href="javascript:void(0);">Войти на сайт</a>
+				</div>
+			</div>
+		</footer><!-- ls_footer -->
+
+		<!-- JS Scripts -->
+		<!-- build:js js/vendor.js -->
+		<!-- bower:js -->
+		<script src="../bower/jquery/dist/jquery.js"></script>
+		<!-- endbower -->
+		<!-- endbuild -->
+		<!-- build:js js/main.js -->
+		<script src="./js/custom.js"></script>
+		<!-- endbuild -->
+	</body>
+</html>

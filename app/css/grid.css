@@ -1,0 +1,36 @@
+.ls_row {
+	margin-left: -9px;
+	margin-right: -9px;
+}
+.ls_row:before,
+.ls_row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.ls_col-25,
+.ls_col-33,
+.ls_col-50,
+.ls_col-75,
+.ls_col-100 {
+	float: left;
+	padding: 0 9px;
+	box-sizing: border-box;
+}
+
+.ls_col-25 {
+	width: 25%;
+}
+.ls_col-33 {
+	width: 33.3%;
+}
+.ls_col-50 {
+	width: 50%;
+}
+.ls_col-75 {
+	width: 75%;
+}
+.ls_col-100 {
+	width: 100%;
+}
