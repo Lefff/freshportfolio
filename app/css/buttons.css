@@ -1,0 +1,94 @@
+/*
+ * Buttons
+ */
+.ls_btn {
+	position: relative;
+	top: 0;
+	display: inline-block;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 19px;
+	font-weight: 400;
+	text-align: center;
+	height: 33px;
+	line-height: 1.5;
+	background-color: #48cbe8;
+	margin: 0 auto 4px;
+	padding: 0 20px;
+	min-width: 138px;
+	box-sizing: border-box;
+	transition: top .1s linear, box-shadow .1s linear;
+	box-shadow: 0 2px 0 #3ba8c0;
+}
+.ls_btn.ls_btn-dark {
+	background-color: #849db5;
+	box-shadow: 0 2px 0 #687b8f;
+}
+
+
+
+/*
+ * Buttons - Sizes
+ */
+.ls_btn.ls_btn-big {
+	margin-bottom: 8px;
+	min-width: 225px;
+	font-size: 36px;
+	height: 50px;
+	padding: 0 50px;
+	box-shadow: 0 4px 0 #3ba8c0;
+	border-radius: 6px;
+}
+
+
+
+/*
+ * Buttons - Actions
+ */
+
+/*
+ * Buttons - Actions - Hover
+ */
+.ls_btn:hover {
+	top: 2px;
+	box-shadow: 0 0 0 #3ba8c0;
+}
+.ls_btn.ls_btn-dark:hover {
+	box-shadow: 0 0 0 #687b8f;
+}
+.ls_btn.ls_btn-big:hover {
+	top: 4px;
+}
+
+/*
+ * Buttons - Actions - Active
+ */
+.ls_btn:active {
+	top: 4px;
+	box-shadow: 0 -2px 0 #3ba8c0;
+}
+.ls_btn.ls_btn-dark:active {
+	box-shadow: 0 -2px 0 #687b8f;
+}
+.ls_btn.ls_btn-big:active {
+	top: 8px;
+	box-shadow: 0 -4px 0 #3ba8c0;
+}
+
+
+
+/*
+ * Buttons - Fix Properties
+ */
+html.no-csstransitions .ls_btn {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+html.no-csstransitions .ls_btn:hover,
+html.no-csstransitions .ls_btn:active,
+html.no-csstransitions .ls_btn-dark:hover,
+html.no-csstransitions .ls_btn-dark:active {
+	top: 0;
+}

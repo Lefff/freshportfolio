@@ -1,0 +1,14 @@
+/*
+ * Components
+ */
+
+/*
+ * Components - Headers Blocks
+ */
+.ls_cmp-color_header {
+	background-color: #48cbe8;
+	border-bottom: 15px solid #67dffa;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 25px;
+}

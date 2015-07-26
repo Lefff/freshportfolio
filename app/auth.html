@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Авторизация | Loftschool</title>
+		
+		<!--SEO -->
+		<meta name="description" content="Выпускной проект №1 от Loftschool">
+		<meta name="keywords" content="loftschool, homework, вп1, выпускной проект">
+		<meta name="author" content="Тимофей Пономарев">
+		
+		<!-- Icons -->
+		<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		
+		<!--CSS -->
+		<!-- build:css css/vendor.css -->
+		<!-- bower:css -->
+		<link rel="stylesheet" href="../bower/normalize.css/normalize.css" />
+		<!-- endbower -->
+		<!-- endbuild -->
+		<!-- build:css css/main.css -->
+
+		<!--CSS - Overall -->
+		<link rel="stylesheet" href="./css/custom.css">
+
+		<!--CSS - Components -->
+		<link rel="stylesheet" href="./css/components.css">
+		<link rel="stylesheet" href="./css/buttons.css">
+
+		<!--CSS - Pages -->
+		<link rel="stylesheet" href="./css/auth.css">
+
+		<!-- endbuild -->
+
+		<!-- modernizr -->
+		<!-- build:js js/vendor/modernizr.js -->
+		<script src="../bower/modernizr/modernizr.js"></script>
+		<!-- endbuild -->
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+			<p class="ls_old_browser">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">используйте последние версии браузеров</a>, чтобы и мы и вы были счастливы.</p>
+		<![endif]-->
+
+		<div class="ls_auth">
+			<div class="ls_auth-login_wrap">
+				<div class="ls_cmp-color_header">
+					<h2 class="ls_auth-title">Авторизируйтесь</h2>
+				</div>
+				<form class="ls_auth-form" action="javascript:void(0);">
+					<div class="ls_auth-form-row">
+						<label class="ls_auth-form-label" for="ls_login">Логин</label>
+						<div class="ls_auth-form-field">
+							<input id="ls_login" name="ls_login" type="text" placeholder="Введите логин">
+						</div>
+					</div>
+					<div class="ls_auth-form-row">
+						<label class="ls_auth-form-label" for="ls_pass">Пароль</label>
+						<div class="ls_auth-form-field">
+							<input id="ls_pass" name="ls_pass" type="password" placeholder="Введите пароль">
+						</div>
+					</div>
+					<div class="ls_auth-form-row submit">
+						<button class="ls_btn ls_btn-big" type="submit">Войти</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<footer class="ls_footer">
+			<div class="ls_wrapper">
+				<div class="ls_footer-copy">
+					<div class="ls_footer-copy-text">&copy; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+				</div>
+				<div class="ls_footer-lock">
+					<a class="ls_footer-lock-link" href="javascript:void(0);">Войти на сайт</a>
+				</div>
+			</div>
+		</footer><!-- ls_footer -->
+
+		<!-- JS Scripts -->
+		<!-- build:js js/vendor.js -->
+		<!-- bower:js -->
+		<script src="../bower/jquery/dist/jquery.js"></script>
+		<!-- endbower -->
+		<!-- endbuild -->
+		<!-- build:js js/main.js -->
+		<script src="./js/custom.js"></script>
+		<!-- endbuild -->
+	</body>
+</html>
