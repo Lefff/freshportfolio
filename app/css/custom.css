@@ -16,6 +16,15 @@
 }
 @font-face {
 	font-family: 'Fira Sans';
+	src: url('../fonts/firasans-lightitalic.eot');
+	src: url('../fonts/firasans-lightitalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/firasans-lightitalic.woff') format('woff'),
+		url('../fonts/firasans-lightitalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Fira Sans';
 	src: url('../fonts/firasans-book.eot');
 	src: url('../fonts/firasans-book.eot?#iefix') format('embedded-opentype'),
 		url('../fonts/firasans-book.woff') format('woff'),
