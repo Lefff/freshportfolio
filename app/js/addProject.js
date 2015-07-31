@@ -25,11 +25,10 @@ var ls_addProject;
 			_popUpObj.bPopup({
 				closeClass : 'ls_cmp-popup-close',
 				modalColor : '#58697a',
-				opacity : .75,
-				transition: 'slideDown'
+				opacity    : .75,
+				transition : 'slideDown'
 			});
 		};
-
 
 		return {
 			init : init
