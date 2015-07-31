@@ -45,6 +45,7 @@
 }
 .ls_form-field textarea {
 	padding: 18px 16px;
+	max-width: 100%;
 }
 .ls_form-field input[type="text"]::-webkit-input-placeholder,
 .ls_form-field input[type="password"]::-webkit-input-placeholder,
