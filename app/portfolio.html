@@ -100,10 +100,10 @@
 							<ul class="ls_portfolio-list">
 								<li class="ls_portfolio-item">
 									<div class="ls_portfolio-item-img_wrap">
+										<a class="ls_portfolio-item-img_link" href="javascript:void(0);">
+											<span class="ls_portfolio-item-img_title">подробнее</span>
+										</a>
 										<img class="ls_portfolio-item-img" src="http://placehold.it/185x185?text=Hello+1" alt="Test Image">
-										<a class="ls_portfolio-item-img_link" href="javascript:void(0);">
-											<span class="ls_portfolio-item-img_title">подробнее</span>
-										</a>
 									</div>
 									<a href="javascript:void(0);" class="ls_portfolio-item-link">www.site.ru</a>
 									<div class="ls_portfolio-item-pre_info">
@@ -112,10 +112,10 @@
 								</li>
 								<li class="ls_portfolio-item">
 									<div class="ls_portfolio-item-img_wrap">
+										<a class="ls_portfolio-item-img_link" href="javascript:void(0);">
+											<span class="ls_portfolio-item-img_title">подробнее</span>
+										</a>
 										<img class="ls_portfolio-item-img" src="http://placehold.it/185x185?text=Hello+2" alt="Test Image">
-										<a class="ls_portfolio-item-img_link" href="javascript:void(0);">
-											<span class="ls_portfolio-item-img_title">подробнее</span>
-										</a>
 									</div>
 									<a href="javascript:void(0);" class="ls_portfolio-item-link">www.site.ru</a>
 									<div class="ls_portfolio-item-pre_info">
@@ -124,10 +124,10 @@
 								</li>
 								<li class="ls_portfolio-item">
 									<div class="ls_portfolio-item-img_wrap">
+										<a class="ls_portfolio-item-img_link" href="javascript:void(0);">
+											<span class="ls_portfolio-item-img_title">подробнее</span>
+										</a>
 										<img class="ls_portfolio-item-img" src="http://placehold.it/185x185?text=Hello+3" alt="Test Image">
-										<a class="ls_portfolio-item-img_link" href="javascript:void(0);">
-											<span class="ls_portfolio-item-img_title">подробнее</span>
-										</a>
 									</div>
 									<a href="javascript:void(0);" class="ls_portfolio-item-link">www.site.ru</a>
 									<div class="ls_portfolio-item-pre_info">
@@ -136,10 +136,10 @@
 								</li>
 								<li class="ls_portfolio-item">
 									<div class="ls_portfolio-item-img_wrap">
-										<img class="ls_portfolio-item-img" src="http://placehold.it/185x185?text=Hello+4" alt="Test Image">
 										<a class="ls_portfolio-item-img_link" href="javascript:void(0);">
 											<span class="ls_portfolio-item-img_title">подробнее</span>
 										</a>
+										<img class="ls_portfolio-item-img" src="http://placehold.it/185x185?text=Hello+4" alt="Test Image">
 									</div>
 									<a href="javascript:void(0);" class="ls_portfolio-item-link">www.site.ru</a>
 									<div class="ls_portfolio-item-pre_info">
@@ -154,6 +154,62 @@
 							</ul>
 						</div>
 					</section>
+					<div class="ls_cmp-popup">
+						<div class="ls_cmp-color_header small">
+							<h2 class="ls_cmp-popup-title">Добавление проекта</h2>
+							<a class="ls_cmp-popup-close" href="#" title="Закрыть">&times;</a>
+						</div>
+						<form class="ls_form ls_form-small ls_portfolio-add_prj_form" action="javascript:void(0);">
+							<div class="ls_row">
+								<div class="ls_col-100">
+									<div class="ls_form-data">
+										<label class="ls_form-label" for="ls_prj_name">Название проекта</label>
+										<div class="ls_form-field">
+											<input id="ls_prj_name" name="ls_prj_name" type="text" placeholder="Введите название">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ls_row">
+								<div class="ls_col-100">
+									<div class="ls_form-data">
+										<label class="ls_form-label" for="ls_prj_file">Картинка проекта</label>
+										<div class="ls_form-field-fake upload">
+											Загрузите изображение
+											<input id="ls_prj_file" name="ls_prj_file" type="file">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ls_row">
+								<div class="ls_col-100">
+									<div class="ls_form-data">
+										<label class="ls_form-label" for="ls_prj_url">URL проекта</label>
+										<div class="ls_form-field">
+											<input id="ls_prj_url" name="ls_prj_url" type="text" placeholder="Добавьте ссылку">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ls_row">
+								<div class="ls_col-100">
+									<div class="ls_form-data">
+										<label class="ls_form-label" for="ls_prj_descr">Описание</label>
+										<div class="ls_form-field">
+											<textarea name="ls_prj_descr" id="ls_prj_descr" placeholder="Пара слов о Вашем проекте"></textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ls_row">
+								<div class="ls_col-100">
+									<div class="ls_form-data submit">
+										<button class="ls_btn" type="submit">Добавить</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
 				</div><!-- ls_about_me-info -->
 
 				<aside class="ls_about_me-left_block">
@@ -215,10 +271,12 @@
 		<!-- build:js js/vendor.js -->
 		<!-- bower:js -->
 		<script src="../bower/jquery/dist/jquery.js"></script>
+		<script src="../bower/bpopup/jquery.bpopup.min.js"></script>
 		<!-- endbower -->
 		<!-- endbuild -->
 		<!-- build:js js/main.js -->
-		<script src="./js/custom.js"></script>
+		<script src="./js/addProject.js"></script>
+		<script src="./js/main.js"></script>
 		<!-- endbuild -->
 	</body>
 </html>

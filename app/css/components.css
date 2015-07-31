@@ -12,3 +12,51 @@
 	text-align: center;
 	margin-bottom: 25px;
 }
+.ls_cmp-color_header.small {
+	border-bottom-width: 9px;
+	margin-bottom: 10px;
+}
+
+
+
+/**
+ * Components - Popup
+ */
+.ls_cmp-popup {
+	width: 362px;
+	background-color: #eff3f7;
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	box-shadow: 0 6px 13px 4px rgba(13, 16, 7, .3);
+}
+.ls_cmp-popup-title {
+	font-size: 25px;
+	font-weight: 400;
+	text-align: left;
+	margin: 0;
+	padding: 13px 50px 7px 13px;
+}
+.ls_cmp-popup-close {
+	position: absolute;
+	right: 12px;
+	top: 10px;
+	font-family: sans-serif;
+	font-size: 22px;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	width: 25px;
+	height: 25px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+.no-borderradius .ls_cmp-popup-close {
+	border: none;
+}
+.js .ls_cmp-popup {
+	display: none;
+}

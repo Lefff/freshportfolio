@@ -14,14 +14,19 @@
 	display: block;
 	margin: 12px auto;
 }
+.ls_form-field-fake {
+	position: relative;
+}
 .ls_form-field input[type="text"],
 .ls_form-field input[type="password"],
 .ls_form-field input[type="email"],
-.ls_form-field textarea {
+.ls_form-field textarea,
+.ls_form-field-fake {
 	display: block;
 	box-sizing: border-box;
 	width: 100%;
 	margin: 0 auto;
+	background-color: #fff;
 	border: 1px solid #48cbe8;
 	outline: none;
 	color: #48cbe8;
@@ -32,7 +37,8 @@
 
 .ls_form-field input[type="text"],
 .ls_form-field input[type="password"],
-.ls_form-field input[type="email"] {
+.ls_form-field input[type="email"],
+.ls_form-field-fake {
 	padding: 0 16px;
 	height: 62px;
 	line-height: 62px;
@@ -43,8 +49,34 @@
 .ls_form-field input[type="text"]::-webkit-input-placeholder,
 .ls_form-field input[type="password"]::-webkit-input-placeholder,
 .ls_form-field input[type="email"]::-webkit-input-placeholder,
-.ls_form-field textarea::-webkit-input-placeholder {
+.ls_form-field textarea::-webkit-input-placeholder,
+.ls_form-field-fake {
 	color: #48cbe8;
+}
+.ls_form-field-fake.upload {
+	padding-right: 50px;
+	overflow: hidden;
+}
+.ls_form-field-fake.upload:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50px;
+	height: 100%;
+	background: #48cbe8 url(../img/ls_form-upload_icon.png) 50% 50% no-repeat;
+}
+.ls_form-field-fake.upload input[type="file"] {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border: none;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	opacity: 0;
+	cursor: pointer;
 }
 .ls_form-field.captcha_img {
 	width: 100%;
@@ -93,12 +125,14 @@
 .ls_form.ls_form-small .ls_form-field input[type="text"],
 .ls_form.ls_form-small .ls_form-field input[type="password"],
 .ls_form.ls_form-small .ls_form-field input[type="email"],
-.ls_form.ls_form-small .ls_form-field textarea {
+.ls_form.ls_form-small .ls_form-field textarea,
+.ls_form.ls_form-small .ls_form-field-fake {
 	font-size: 13px;
 }
 .ls_form.ls_form-small .ls_form-field input[type="text"],
 .ls_form.ls_form-small .ls_form-field input[type="password"],
-.ls_form.ls_form-small .ls_form-field input[type="email"] {
+.ls_form.ls_form-small .ls_form-field input[type="email"],
+.ls_form.ls_form-small .ls_form-field-fake {
 	padding: 0 8px;
 	height: 41px;
 	line-height: 41px;
@@ -106,6 +140,9 @@
 .ls_form.ls_form-small .ls_form-field textarea {
 	padding: 8px;
 	height: 182px;
+}
+.ls_form.ls_form-small .ls_form-field.upload {
+
 }
 .ls_form.ls_form-small .ls_form-field.captcha_text {
 	line-height: 80px;
