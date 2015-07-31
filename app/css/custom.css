@@ -62,13 +62,17 @@
  */
 html {
 	position: relative;
-	min-height: 100%;
 }
+html, body {height: 100%;}
 body {
 	background: #fff url(../img/ls_main_bg.png) 0 0 repeat;
 	font: 100%/1.5em 'Fira Sans', sans-serif;
 	color: #4a545d;
-	margin-bottom: 81px;
+	padding-bottom: 81px;
+	min-height: 100%;
+	height: auto;
+	box-sizing: border-box;
+	position: relative;
 }
 ::selection {
 	background-color: rgba(59, 168, 192, 0.3);

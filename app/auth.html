@@ -46,9 +46,9 @@
 		<link rel="stylesheet" href="./css/grid.css">
 
 		<!--CSS - Pages -->
-		<link rel="stylesheet" href="./css/auth.css">
-		<link rel="stylesheet" href="./css/connect_me.css">
-		<link rel="stylesheet" href="./css/portfolio.css">
+		<link rel="stylesheet" href="./css/page-auth.css">
+		<link rel="stylesheet" href="./css/page-connect_me.css">
+		<link rel="stylesheet" href="./css/page-portfolio.css">
 
 		<!-- endbuild -->
 
@@ -57,35 +57,37 @@
 		<script src="../bower/modernizr/modernizr.js"></script>
 		<!-- endbuild -->
 	</head>
-	<body>
+	<body class="ls_auth_body">
 		<!--[if lt IE 8]>
 			<p class="ls_old_browser">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">используйте последние версии браузеров</a>, чтобы и мы и вы были счастливы.</p>
 		<![endif]-->
 
-		<div class="ls_auth">
-			<div class="ls_auth-login_wrap">
-				<div class="ls_cmp-color_header">
-					<h2 class="ls_auth-title">Авторизируйтесь</h2>
+		<section class="ls_auth">
+			<div class="ls_auth-wrapper">
+				<div class="ls_auth-login_wrap">
+					<div class="ls_cmp-color_header">
+						<h2 class="ls_auth-title">Авторизируйтесь</h2>
+					</div>
+					<form class="ls_form ls_auth-form" action="javascript:void(0);">
+						<div class="ls_form-data">
+							<label class="ls_form-label" for="ls_login">Логин</label>
+							<div class="ls_form-field">
+								<input id="ls_login" name="ls_login" type="text" placeholder="Введите логин">
+							</div>
+						</div>
+						<div class="ls_form-data">
+							<label class="ls_form-label" for="ls_pass">Пароль</label>
+							<div class="ls_form-field">
+								<input id="ls_pass" name="ls_pass" type="password" placeholder="Введите пароль">
+							</div>
+						</div>
+						<div class="ls_form-data submit">
+							<button class="ls_btn ls_btn-big" type="submit">Войти</button>
+						</div>
+					</form>
 				</div>
-				<form class="ls_form ls_auth-form" action="javascript:void(0);">
-					<div class="ls_form-data">
-						<label class="ls_form-label" for="ls_login">Логин</label>
-						<div class="ls_form-field">
-							<input id="ls_login" name="ls_login" type="text" placeholder="Введите логин">
-						</div>
-					</div>
-					<div class="ls_form-data">
-						<label class="ls_form-label" for="ls_pass">Пароль</label>
-						<div class="ls_form-field">
-							<input id="ls_pass" name="ls_pass" type="password" placeholder="Введите пароль">
-						</div>
-					</div>
-					<div class="ls_form-data submit">
-						<button class="ls_btn ls_btn-big" type="submit">Войти</button>
-					</div>
-				</form>
 			</div>
-		</div>
+		</section>
 
 		<footer class="ls_footer">
 			<div class="ls_wrapper">

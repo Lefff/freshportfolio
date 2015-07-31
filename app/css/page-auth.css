@@ -1,17 +1,21 @@
-.ls_auth {
-	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 81px;
-	width: 100%;
-	text-align: center;
-}
-.ls_auth:before {
-	content: '';
-	display: inline-block;
+/**
+ * Page - Authorization
+ */
+
+.ls_auth_body {
 	height: 100%;
+	padding-bottom: 0;
+} 
+.ls_auth {
+	display: table;
+	width: 100%;
+	min-width: 980px;
+	min-height: 100%;
+}
+.ls_auth-wrapper {
+	display: table-cell;
 	vertical-align: middle;
-	margin-right: -0.25em;
+	padding-bottom: 81px;
 }
 .ls_auth-login_wrap {
 	width: 95%;
@@ -20,8 +24,6 @@
 	border-radius: 3px;
 	overflow: hidden;
 	background-color: #eff3f7;
-	display: inline-block;
-	vertical-align: middle;
 	box-shadow: 0 4px 7px rgba(0,0,0,.29);
 }
 .ls_auth-title {
@@ -35,4 +37,9 @@
 	margin: auto;
 	width: 71.8%;
 	max-width: 422px;
+}
+
+.ls_auth_body .ls_footer {
+	position: relative;
+	margin-top: -81px;
 }
