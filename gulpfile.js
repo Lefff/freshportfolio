@@ -104,7 +104,7 @@ gulp.task('servlive', ['server'], function () {
 
 gulp.task('default', function( callback ) {
 	runSequence('clean',
-				['fonts', 'imgs', 'styles'],
+				['fonts', 'imgs', 'styles', 'copy'],
 				'build',
 				callback);
 });

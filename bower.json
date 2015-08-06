@@ -5,6 +5,22 @@
     "normalize.css": "~3.0.3",
     "modernizr": "~2.8.3",
     "jquery": "1.11.3",
-    "bpopup": "~0.11.0"
+    "bpopup": "~0.11.0",
+    "qtip2": "~2.2.1",
+    "jquery-placeholder": "~2.1.2"
+  },
+  "overrides": {
+    "jquery": {
+      "main": "dist/jquery.min.js"
+    },
+    "bpopup": {
+      "main": "jquery.bpopup.min.js"
+    },
+    "qtip2": {
+      "main": [
+        "jquery.qtip.min.css",
+        "jquery.qtip.min.js"
+      ]
+    }
   }
 }

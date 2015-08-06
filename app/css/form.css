@@ -107,6 +107,13 @@
 .ls_form-data-right_side {
 	text-align: right;
 }
+.ls_form .ls_form-field input[type="text"].notValid,
+.ls_form .ls_form-field input[type="password"].notValid,
+.ls_form .ls_form-field input[type="email"].notValid,
+.ls_form .ls_form-field textarea.notValid {
+	background-color: #fad2d1;
+	border-color: #f97e76;
+}
 
 
 

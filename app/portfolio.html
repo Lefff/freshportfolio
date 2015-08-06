@@ -32,6 +32,7 @@
 		<!-- build:css css/vendor.css -->
 		<!-- bower:css -->
 		<link rel="stylesheet" href="../bower/normalize.css/normalize.css" />
+		<link rel="stylesheet" href="../bower/qtip2/jquery.qtip.min.css" />
 		<!-- endbower -->
 		<!-- endbuild -->
 		<!-- build:css css/main.css -->
@@ -162,6 +163,15 @@
 						<form class="ls_form ls_form-small ls_portfolio-add_prj_form" action="javascript:void(0);">
 							<div class="ls_row">
 								<div class="ls_col-100">
+									<div class="ls_cmp-notification">
+										<div class="ls_cmp-notification-title"></div>
+										<div class="ls_cmp-notification-text"></div>
+										<a class="ls_cmp-notification-close" href="javascript:void(0);">&times;</a>
+									</div>
+								</div>
+							</div>
+							<div class="ls_row">
+								<div class="ls_col-100">
 									<div class="ls_form-data">
 										<label class="ls_form-label" for="ls_prj_name">Название проекта</label>
 										<div class="ls_form-field">
@@ -175,7 +185,7 @@
 									<div class="ls_form-data">
 										<label class="ls_form-label" for="ls_prj_file">Картинка проекта</label>
 										<div class="ls_form-field-fake upload">
-											Загрузите изображение
+											<span class="ls_form-field-fake-name">Загрузите изображение</span>
 											<input id="ls_prj_file" name="ls_prj_file" type="file">
 										</div>
 									</div>
@@ -204,7 +214,7 @@
 							<div class="ls_row">
 								<div class="ls_col-100">
 									<div class="ls_form-data submit">
-										<button class="ls_btn" type="submit">Добавить</button>
+										<button class="ls_btn ls_btn-add_new_prj" type="submit">Добавить</button>
 									</div>
 								</div>
 							</div>
@@ -270,11 +280,18 @@
 		<!-- JS Scripts -->
 		<!-- build:js js/vendor.js -->
 		<!-- bower:js -->
-		<script src="../bower/jquery/dist/jquery.js"></script>
+		<script src="../bower/jquery/dist/jquery.min.js"></script>
 		<script src="../bower/bpopup/jquery.bpopup.min.js"></script>
+		<script src="../bower/eventEmitter/EventEmitter.js"></script>
+		<script src="../bower/eventie/eventie.js"></script>
+		<script src="../bower/imagesloaded/imagesloaded.js"></script>
+		<script src="../bower/qtip2/jquery.qtip.min.js"></script>
+		<script src="../bower/jquery-placeholder/jquery.placeholder.js"></script>
 		<!-- endbower -->
 		<!-- endbuild -->
 		<!-- build:js js/main.js -->
+		<script src="./js/validForm.js"></script>
+		<script src="./js/connectAction.js"></script>
 		<script src="./js/addProject.js"></script>
 		<script src="./js/main.js"></script>
 		<!-- endbuild -->

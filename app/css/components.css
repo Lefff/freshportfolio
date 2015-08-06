@@ -60,3 +60,74 @@
 .js .ls_cmp-popup {
 	display: none;
 }
+
+
+
+/**
+ * Components - Notification Boxes
+ */
+.ls_cmp-notification {
+	display: none;
+	background-color: #3ba8c0;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+	border: 1px solid #51daf8;
+	border-radius: 3px;
+	margin: 5px 0;
+	padding: 8px;
+	position: relative;
+}
+.ls_cmp-notification-title {
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 1;
+	margin-bottom: 5px;
+}
+.ls_cmp-notification-text {
+	line-height: 1;
+}
+.ls_cmp-notification-close {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	width: 12px;
+	height: 12px;
+	vertical-align: top;
+	text-decoration: none;
+	outline: none;
+	color: inherit;
+	font-size: 30px;
+	line-height: .4;
+	font-weight: 300;
+	overflow: hidden;
+}
+.ls_cmp-notification.error {
+	background-color: #f2cccd;
+	border-color: #f97e76;
+	color: #f97e76;
+}
+.ls_cmp-notification.success {
+	background-color: #c3e9d4;
+	border-color: #49bb7b;
+	color: #49bb7b
+}
+
+
+
+/**
+ * Components - qTip Style
+ */
+.qtip-ls_qtip {
+	background-color: #f97e76;
+	color: #f97e76;
+	font-size: 13px;
+	line-height: 1;
+	text-align: center;
+	border: none;
+	border-radius: 2px;
+	padding: 1px 5px;
+}
+.qtip-content {
+	color: #fff;
+}
